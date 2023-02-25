@@ -85,3 +85,37 @@ const sr = ScrollReveal({
 sr.reveal('.home-data', {})
 sr.reveal('.home-scroll', {delay:200})
 sr.reveal('.home-img', {origin:'right', delay:400})
+
+/*SCROLL ABOUT*/
+sr.reveal('.about-img', {origin:'left',delay:500})
+sr.reveal('.about-description-title', {delay:300})
+sr.reveal('.about-text', {delay:500})
+sr.reveal('.about-button', {delay:600})
+
+/*SCROLL SKILLS*/ 
+sr.reveal('.skills-subtitle', {})
+sr.reveal('.skills-name', {distance: '20px', delay:50, interval: 100})
+sr.reveal('.skills-img', {delay:400})
+
+/*SCROLL PROJECTS*/ 
+sr.reveal('.section-description', {})
+sr.reveal('.project-title', {delay:200})
+sr.reveal('.project-case', {delay:200})
+sr.reveal('.project-text', {delay:300})
+sr.reveal('.project-button', {delay:500})
+sr.reveal('.project-image', {delay:400})
+
+/*SCROLL SIDE PROJECTS*/ 
+sr.reveal('.s-p-image', {delay:100, interval: 200})
+sr.reveal('.side-project-button', {delay:200})
+
+/*SCROLL SIDE PROJECTS*/ 
+sr.reveal('.services-data', {delay:200})
+
+/*SCROLL CONTACT ME */ 
+sr.reveal('.contact-container', {delay:200})
+
+/*SCROLL CONTACT*/ 
+sr.reveal('.contact-info-title', {delay:100})
+sr.reveal('.contact-info-subtitle', {delay:200})
+sr.reveal('.contact-info-links', {delay:200, interval: 200})
