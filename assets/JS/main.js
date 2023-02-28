@@ -22,24 +22,36 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*====== SCROLL SECTIONS ACTIVE LINK ======*/ 
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+// function scrollActive(){
+//     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.OffsetTop - 50
-        sectionId = current.getAttribute('id')
+//     sections.forEach(current =>{
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.OffsetTop - 50
+//         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+//             document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         }else{
+//             document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
+
+    const li=document.querySelectorAll(".nav-item");
+    const sec=document.querySelectorAll("section");
+
+    function activeMenu(){
+        let len=sec.length;
+        while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+        li.forEach(ltx => ltx.classList.remove("active-link"));
+        li[len].classList.add("active")
+    }
+    activeMenu();
+    window.addEventListener("scroll", activeMenu);
 
 
 /*====== SERVICES MODAL ======*/

@@ -222,10 +222,15 @@ section {
 
 /*  Active menu  */
 .active-link {
-    position: relative;
+    background: var(--first-color);
+    color: #fff;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 3px;
+    
 }
 
-.active-link::after {
+/* .active-link::after {
     content: '';
     position: absolute;
     bottom: -.3rem;
@@ -235,7 +240,7 @@ section {
     height: 2px;
     background-color: var(--first-color-alt);
     border-radius: 6px;
-}
+} */
 
 /* ================ HOME ================= */
 .home-section {
@@ -711,7 +716,7 @@ figure {
     color: #191717;
 }
 
-/*================ PROJECT IN MIND =================*/
+/*================ FOOTER =================*/
 .footer {
     padding-top: 2rem;
 }
