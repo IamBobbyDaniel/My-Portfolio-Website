@@ -1,5 +1,5 @@
 /* =================GOGGLE FONTS=================== */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap');
 
 /* ================= VARIABLES CSS =================== */
 :root {
@@ -19,6 +19,7 @@
     --container-color: #fff;
 
     /* ============= Font and typography =============== */
+    --logo-font:'Bubblegum Sans', cursive;
     --body-font:'Nunito Sans', sans-serif;
     --header-font: 'Poppins', sans-serif;
 
@@ -186,7 +187,9 @@ section {
 }
 
 .nav-logo{
-    font-weight: var(--font-semi-bold);
+    font-size: var(--h3-font-size);
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--first-color-darker);
 }
 
 .nav-item {
@@ -199,15 +202,15 @@ section {
 }
 
 .nav-link:hover {
-    color: hsl var(--text-color)
+    color: var(--first-color);
 }
 
-.nav-logo, .nav-toggle {
+.nav-toggle {
     color: hsl(var(--hue-color), 8%, 15%);
 }
 
 .nav-logo:hover {
-    color: hsl var(--first-color);
+    color: hsl var(--text-color);
 }
 
 .nav-toggle {
@@ -222,12 +225,8 @@ section {
 
 /*  Active menu  */
 .active-link {
-    background: var(--first-color);
-    color: #fff;
+    color: var(--first-color);
     display: inline-block;
-    padding: 6px;
-    border-radius: 3px;
-    
 }
 
 /* .active-link::after {
@@ -728,7 +727,7 @@ figure {
 
 .footer-bg {
     background-color: var(--first-color);
-    padding: 2rem 0 3rem;
+    padding: 2rem 0 1rem;
 }
 
 .footer-title {
@@ -840,7 +839,7 @@ figure {
     }
 
     .nav-logo {
-        font-size: var(--h3-font-size);
+        font-size: var(--h2-font-size);
     }
 
     .nav-toggle {
@@ -903,7 +902,7 @@ figure {
     }
 
     .nav-logo {
-        font-size: var(--h3-font-size);
+        font-size: var(--h2-font-size);
     }
 
     .nav-link:hover {

@@ -109,13 +109,7 @@ sr.reveal('.skills-subtitle', {})
 sr.reveal('.skills-name', {distance: '20px', delay:50, interval: 100})
 sr.reveal('.skills-img', {delay:400})
 
-/*SCROLL PROJECTS*/ 
-sr.reveal('.section-description', {})
-sr.reveal('.project-title', {delay:200})
-sr.reveal('.project-case', {delay:200})
-sr.reveal('.project-text', {delay:300})
-sr.reveal('.project-button', {delay:500})
-sr.reveal('.project-image', {delay:400})
+
 
 /*SCROLL SIDE PROJECTS*/ 
 sr.reveal('.s-p-image', {delay:100, interval: 200})
