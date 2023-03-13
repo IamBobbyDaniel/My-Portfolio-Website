@@ -1,5 +1,12 @@
 /* =================GOGGLE FONTS=================== */
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap');
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url href=href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700";
+    display: swap;
+}
 
 /* ================= VARIABLES CSS =================== */
 :root {
@@ -69,7 +76,6 @@ html {
 }
 
 body {
-    /* margin: 0 0 var(--header-height) 0; */
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -131,7 +137,6 @@ img {
 
 .one-header {
     width: 100%;
-    /* max-width: 100vw; */
     position: fixed;
     top: 0;
     left: 0;
@@ -421,21 +426,18 @@ p, li{
 
 
 /*================ MEDIA QUERIES =================*/
-
+/* * For Medium Devices*/
+@media screen and (max-width: 568px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 @media screen and (min-width:768px) {
 .nav {
         height: calc(var(--header-height) + 1.5rem);
     }
-
-       
-    /* .nav-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding-top: 1.5rem;
-    } */
 
     .nav-list {
         list-style: none;
@@ -482,26 +484,6 @@ p, li{
     .footer-container {
         padding: 0 1rem;
     }
-
-
-         /* body {
-             margin: 0;
-         }
-    
-         section {
-             margin-left: 1rem;
-             margin-right: 1rem;
-         }
-    
-         .section {
-             padding: 6rem 0 2rem;
-         }
-    
-         .container {
-             margin-left: auto;
-             margin-right: auto;
-         }
-          */
     
     .section-container {
         margin: 6rem 6rem 15rem;
@@ -522,13 +504,11 @@ p, li{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'a a b';
         gap: 1rem;
-        margin: 2rem;
-        /* padding: 0 3rem; */
+        margin: 6rem;
     }
 
     .intro-section-2 {
         margin: 1rem 6rem 4rem;
-        /* padding: 0 3rem; */
     }
 
     .project-description-1{
@@ -649,6 +629,9 @@ p, li{
 }
 
 @media screen and (min-width:1024px) {
+    .nav-item {
+        font-size: var(--header-font);
+    }
     .footer-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -656,6 +639,10 @@ p, li{
         margin-top: 0rem;
     }
 
+    .footer-link-container {
+    margin-top: 0rem;
+}
+    
     .footer-links {
         flex-direction: row;
         column-gap: 2rem;
@@ -674,6 +661,7 @@ p, li{
         
     .footer-socials {
         margin-left: 6rem;
+        margin-top: 0rem;
     }
 }
 

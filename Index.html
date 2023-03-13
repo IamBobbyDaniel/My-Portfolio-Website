@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Responsive Portfolio Website</title>
-    <!-- ===================UNICONS===================== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap"
+        as="font" crossorigin>
     <!-- ===================CSS===================== -->
     <link rel="stylesheet" href="assets/CSS/Style.css">
-
-    <link rel="stylesheet" href="assets/JS/script.js">
-    <link rel="stylesheet" href="">
+    <!-- ===================UNICONS===================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
@@ -36,7 +38,6 @@
             </div>
         </nav>
     </header>
-
     <!-- =================== MAIN ===================== -->
     <main class="main">
         <!-- =================== HOME ===================== -->
@@ -61,7 +62,8 @@
                     </div>
 
                     <div class="home home-img">
-                        <img src="assets/Images/Hero Image.webp" alt="Hero image">
+                        <img src="assets/Images/Hero Image.webp" width="820" height="744" alt="Hero image"
+                            layout="responsive" defer>
                     </div>
 
                     <div class="home-data">
@@ -91,8 +93,7 @@
             <h2 class="section-title">About</h2>
 
             <div class="about-container bd-grid">
-
-                <img src="assets/Images/Second image.webp" class="about-img" alt="about image">
+                <img src="assets/Images/Second image.webp" width="326" height="355" class="about-img" alt="about image">
 
                 <div class="about-description">
                     <h4 class="about-description-title">Who am I?</h4>
@@ -114,13 +115,12 @@
                         products focus on solving problems for different niches and industries using the power of
                         technology. </p>
 
-                    <a href="#" class="button button-flex  about-button">
+                    <a href="/assets/Daniel Emmanuel CV.pdf" target="_blank" class="button button-flex  about-button">
                         View resume
                     </a>
                 </div>
             </div>
         </section>
-
 
         <!-- =================== SKILLS ===================== -->
         <section class="skills-section" id="skills">
@@ -151,7 +151,7 @@
                 </div>
 
                 <div class="skills-img">
-                    <img src="assets/Images/Diary image.webp" alt="Diary image">
+                    <img src="assets/Images/Diary image.webp" width="430" height="286" alt="Diary image">
                 </div>
             </div>
             <h5 class="section-subtitle">&lt;&#47;Introduction&gt;</h5>
@@ -167,52 +167,60 @@
 
                 <!-- ========= First Project ========= -->
                 <div class="first-project project-case">
-
-                    <div>
-                        <figure class="project-image">
-                            <a href="#" class="project-link"> <img src="assets/Images/First project image.webp"
-                                    alt="project image" class="first-project-image pro-img"> </a>
-                        </figure>
+                    <figure class="project-image">
+                        <a href="/First project.html" target="_blank" class="project-link"> <img
+                                src="assets/Images/First project image.webp" width="883" height="470"
+                                alt="project image" class="first-project-image pro-img" layout="responsive" defer>
+                        </a>
+                    </figure>
+                    <div class="project-content right">
+                        <div class="project-description content">
+                            <h3 class="project-title">ANIMOTION</h3>
+                            <p class="project-text">Animotion is an open-source repository that contains pre-made
+                                animation
+                                files that are free for use in personal and commercial projects.</p>
+                            <a href="/First project.html" class="project-button button-flex">View project</a>
+                        </div>
                     </div>
 
-
-                    <div class="project-description">
-                        <h3 class="project-title">ANIMOTION</h3>
-                        <p class="project-text">Animotion is an open-source repository that contains pre-made animation
-                            files that are free for use in personal and commercial projects.</p>
-                        <a href="#" class="project-button button-flex">View project</a>
-                    </div>
                 </div>
 
                 <!-- ========= Second Project ========= -->
                 <div class="second-project project-case">
                     <figure class="project-image">
-                        <a href="#" class="project-link"> <img src="assets/Images/Second project image.webp"
-                                alt="project image" class="second-project-image pro-img"></a>
+                        <a href="/Second project.html" target="_blank" class="project-link"> <img
+                                src="assets/Images/Second project image.webp" width="883" height="470"
+                                alt="project image" class="second-project-image pro-img" layout="responsive" defer></a>
                     </figure>
-
-                    <div class="project-description">
-                        <h3 class="project-title">MOON NIGHT</h3>
-                        <p class="project-text">Moon Night is a mobile app designed to address the issue of sleep
-                            deprivation, users can track sleep, track room temperature, experiment with
-                            meditation, relaxing music, and other methods.</p>
-                        <a href="#" class="project-button button-flex">View project</a>
+                    <div class="project-content right">
+                        <div class="project-description content">
+                            <h3 class="project-title">MOON NIGHT</h3>
+                            <p class="project-text">Moon Night is a mobile app designed to address the issue of sleep
+                                deprivation, users can track sleep, track room temperature, experiment with
+                                meditation, relaxing music, and other methods.</p>
+                            <a href="/Second project.html" target="_blank" class="project-button button-flex">View
+                                project</a>
+                        </div>
                     </div>
+
                 </div>
 
                 <!-- ========= Third Project ========= -->
-
-                <div class="third-project ">
+                <div class="third-project project-case ">
                     <figure class="project-image">
-                        <a href="#" class="project-link"> <img src="assets/Images/Third project image.webp"
-                                alt="project image" class="third-project-image pro-img"></a>
+                        <a href="https://www.figma.com/file/IXDfTtcvseYcoXxpd9aOsI/My-Portfolio-Website-Design-Template?node-id=0%3A1&t=RDlshtAi3MsyNjCT-1"
+                            target="_blank" class="project-link"> <img src="assets/Images/Third project image.webp"
+                                width="883" height="470" alt="project image" class="third-project-image pro-img"
+                                layout="responsive" defer></a>
                     </figure>
-
-                    <div class="project-description">
-                        <h3 class="project-title">MY PORTFOLIO WEBSITE</h3>
-                        <p class="project-text">This is my personal portfolio. It is responsive and scalable. It was
-                            built using HTML, CSS and Javascript.</p>
-                        <a href="#" class="project-button button-flex">View project</a>
+                    <div class="project-content right">
+                        <div class="project-description content">
+                            <h3 class="project-title">MY PORTFOLIO WEBSITE</h3>
+                            <p class="project-text">This is my personal portfolio. It is responsive and scalable. It was
+                                built using HTML, CSS and Javascript.</p>
+                            <a href="https://www.figma.com/file/IXDfTtcvseYcoXxpd9aOsI/My-Portfolio-Website-Design-Template?node-id=0%3A1&t=RDlshtAi3MsyNjCT-1"
+                                target="_blank" class="project-button button-flex">View project</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -226,18 +234,22 @@
 
             <div class="side-projects-images">
                 <figure class="s-p-image">
-                    <img src="assets/Images/Side projects Hero section.webp" alt="">
+                    <img src="assets/Images/Side projects Hero section.webp" width="393" height="251"
+                        alt="Side projects Hero section" layout="responsive" defer>
                 </figure>
 
                 <figure class="s-p-image">
-                    <img src="assets/Images/Side projects VR.webp" alt="">
+                    <img src="assets/Images/Side projects VR.webp" width="398" height="257" alt="Side projects VR"
+                        layout="responsive" defer>
                 </figure>
 
                 <figure class="s-p-image">
-                    <img src="assets/Images/Side projects game dashboard.webp" alt="">
+                    <img src="assets/Images/Side projects game dashboard.webp" width="385" height="260"
+                        alt="Side projects game dashboard" layout="responsive" defer>
                 </figure>
             </div>
-            <a href="#" class="side-project-button project-button button-flex">View more</a>
+            <a href="/Side projects.html" class="side-project-button project-button button-flex" target="_blank">View
+                more</a>
             <h5 class="section-subtitle ">&lt;&#47;Side projects&gt;</h5>
         </section>
 
@@ -337,7 +349,7 @@
                     </div>
 
                     <div class="">
-                        <a href="#" class="contact-button">Say Hello</a>
+                        <a href="mailto:danielkachi.emma@gmail.com" target="_blank" class="contact-button">Say Hello</a>
                     </div>
                 </div>
             </div>
@@ -353,32 +365,31 @@
                 <ul>
                     <li class="contact-info-links">
                         <i class="uil uil-envelope contact-info-icon mail-icon"></i>
-                        <a href="Danielkachi.emma@gmail.com" class="contact-info-link">Danielkachi.emma@gmail.com</a>
+                        <a href="mailto:danielkachi.emma@gmail.com" target="_blank"
+                            class="contact-info-link">Danielkachi.emma@gmail.com</a>
                     </li>
                     <li class="contact-info-links">
                         <i class="uil uil-linkedin contact-info-icon linkedin-icon"></i>
-                        <a href="https://www.linkedin.com/in/iambobbydaniel" class="contact-info-link">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/iambobbydaniel" target="_blank"
+                            class="contact-info-link">LinkedIn</a>
                     </li>
                     <li class="contact-info-links">
                         <i class="uil uil-twitter contact-info-icon twitter-icon"></i>
-                        <a href="https://twitter.com/iambobbydaniel" class="contact-info-link">Twitter</a>
+                        <a href="https://twitter.com/iambobbydaniel" target="_blank"
+                            class="contact-info-link">Twitter</a>
                     </li>
                     <li class="contact-info-links">
                         <i class="uil uil-behance contact-info-icon behance-icon"></i>
-                        <a href="https://www.behance.net/iambobbydaniel" class="contact-info-link">Behance</a>
+                        <a href="https://www.behance.net/iambobbydaniel" target="_blank"
+                            class="contact-info-link">Behance</a>
                     </li>
-                    <li class="contact-info-links">
-                        <i class="uil uil-facebook contact-info-icon facebook-icon"></i>
-                        <a href="" class="contact-info-link">Facebook</a>
-                    </li>
+
                 </ul>
             </div>
         </section>
 
 
     </main>
-
-
     <!-- =================== FOOTER ===================== -->
     <footer class="footer">
         <div class="footer-bg">
@@ -397,7 +408,7 @@
                         </li>
 
                         <li>
-                            <a href="#project" class="footer-link">Projects</a>
+                            <a href="#projects" class="footer-link">Projects</a>
                         </li>
 
                         <li>
@@ -415,8 +426,8 @@
                         <i class="uil uil-twitter-alt"></i>
                     </a>
 
-                    <a href="" class="footer-social">
-                        <i class="uil uil-facebook-f"></i>
+                    <a href="https://www.behance.net/iambobbydaniel" target="_blank" class="footer-social">
+                        <i class="uil uil-behance"></i>
                     </a>
                 </div>
             </div>
@@ -424,17 +435,11 @@
         </div>
 
     </footer>
-
     <!-- =================== SCROLL TOP===================== -->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup-icon"></i>
-    </a>
-
-    <!-- =================== SCROLL REVEAL===================== -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup-icon"></i></a>
     <!-- ===================Main javascript===================== -->
-    <script src="assets/JS/main.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/JS/main.js" defer></script>
+    <!-- =================== SCROLL REVEAL===================== -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
 </body>
-
 </html>

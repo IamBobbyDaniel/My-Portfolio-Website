@@ -1,10 +1,10 @@
 /* =================GOGGLE FONTS=================== */
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap');
 @font-face {
-    font-family:'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: url href= href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700";
+    src: url href=href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700";
     display: swap;
 }
 
@@ -112,37 +112,13 @@ section {
     padding: 2rem 0 4rem;
 }
 
-.section {
-    font-size: var(--h2-font-size);
-}
-
-.section {
-    display: block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
-}
-
-.section-title {
-    font-size: var(--smaller-font-size);
-    font-weight: var(--font-semi-bold);
-    color: var(--text-color);
-}
-
-.section-subtitle {
-    display: block;
-    font-size: var(--h5-font-size);
-    font-weight: var(--font-regular);
-    color: var(--first-color);
-    margin-bottom: var(--mb-1-);
-    margin-top: var(--mb-3);
-}
 
 /* ============= LAYOUT =============== */
 .bd-container {
     max-width: 767px;
     max-width: 100vw;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
 }
 
 .one-header {
@@ -220,104 +196,30 @@ section {
 }
 
 /*  MAIN */
-.hero-image {
-    margin-top: 3rem;
-}
 
 .section-container {
     margin: 2rem 1rem 4rem;
 }
 
-.ul {
-    margin: 1rem;
-    list-style: circle
+.title {
+    margin-top: 6rem;
+    text-align: center;
 }
 
-hr {
-    margin: .05rem .05rem 2rem;
-
-}
-
-p,
-li {
-    line-height: 170%;
-}
-
-.left-side-title {
-    margin-bottom: 1rem;
-    font-size: var(--h3-font-size)
-}
-
-.left-side {
-    margin-bottom: 1rem;
-}
-
-/*  Introduction section */
-
-.project-desc-title {
-    margin-bottom: 1rem;
-    font-weight: var(--font-bold);
-}
-
-.project-desc {
-    line-height: 170%;
-    margin-bottom: 4rem;
-}
-
-.project-desc-subtitle {
+.sub-title {
+    text-align: center;
     font-weight: var(--font-semi-bold);
 }
 
-.project-desc-info {
-    margin-bottom: 3rem;
+img {
+    padding-bottom: 2rem;
 }
 
-.problem-container {
-    margin-bottom: 3rem;
-}
-
-.solution-subtitle {
-    font-weight: var(--font-semi-bold);
-
-}
-
-.design-process {
-    margin: 0 0rem 10rem;
-}
-
-
-/*  Empathy section */
-.empathize-section {
-    margin-bottom: 10rem;
-}
-
-.user-research,
-.user-interview {
-    margin-bottom: 2rem;
-}
-
-.empathy-img,
-.ideation-img,
-.user-journey-map-img,
-.design-phase-img,
-.feedback-img,
-.test-phase-img {
-    margin: 2rem 0 6rem;
-}
-
-.included-title {
-    font-size: var(--h4-font-size);
-}
-
-.redesign-title {
-    margin-top: 4rem;
-}
-.result-text {
-    margin-bottom: 4rem;
-}
-
-.results-list {
-    margin-bottom: 2rem;
+.mobile-img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -423,21 +325,11 @@ li {
 
 
 /*================ MEDIA QUERIES =================*/
-/* For Small Devices*/
-@media screen and (max-width: 350px) {
-    .hero-image {
-        margin-top: 2rem;
-    }
-
+/* * For Medium Devices*/
+@media screen and (max-width: 568px) {
     img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
-    }
-}
-
-@media screen and (min-width: 568px) { 
-    .hero-image {
-        margin-top: 2rem;
     }
 }
 
@@ -477,97 +369,37 @@ li {
         top: initial 0;
     }
 
-    .section-title {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
-    }
-
-    .section-container {
-        margin: 6rem 6rem 15rem;
-    }
-
-    p {
-        font-size: var(--h4-font-size);
-        line-height: 170%;
-    }
-
-    li {
-        font-size: var(--h4-font-size);
-        line-height: 170%;
-    }
-
     .grid {
         display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
-        grid-template-areas: 'a b b';
-        gap: 1rem;
-        margin-top: 6rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        /* margin-top: 6rem; */
     }
-    
-    .intro-section {
+
+    .mobile-grid {
         display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
-        grid-template-areas: 'a a b';
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        margin: 6rem;
-        padding: 0 0rem;
     }
 
-    .intro-section-2 {
-        margin: 4rem 6rem;
+    .mobile-img {
+        width: 70%;
+    }
+    /* .first-img {
+        width: 320px;
     }
 
-    .project-description-1{
-        grid-area: a;
-        padding-right: 3rem;
-    }
-    
-    .project-desc {
-        font-size: var(--h4-font-size);
-        line-height: 170%;
-        margin-bottom: 4rem;
-    }
-    
-    hr {
-        margin: 1rem 5.5rem 0rem ;
+    .fourth-img {
+        width: 325px;
     }
 
-    .line {
-        margin: 1rem 0rem -3rem;
-    }
+    .fifth-img {
+        width: 320px;
+    } */
 
-    .solution-container {
-        padding-left: 4rem;
-    }
-    
-    .solution-list {
-        line-height: 150%;
-        font-size: var(--normal-font-size);
-    }
-
-    .right-side {
-        grid-area: b;
-        padding-left: 4rem;
-    }
-
-    .solution-subtitle {
-        margin-top: 2rem;
-    }
-
-    .left-side-title {
-        font-size: var(--h3-font-size)
-    }
-
-    .left-side {
-        grid-area: a;
-    }
-
-    .idea-phase-left-side {
-        margin-top: 6rem;
-    }
-
-    .redesign-title {
-        margin-top: 0rem;
+    .section-container {
+        margin: 1rem 2rem 8rem;
     }
 
     .footer-grid {
@@ -591,26 +423,24 @@ li {
     .footer-socials {
         margin-top: 0rem;
     }
-
 }
 
-
-
-
 @media screen and (min-width:1024px) {
-    .left-side-title {
-        font-size: var(--h2-font-size)
-    }
-
-
-    .wireframe-grid {
-        display: flex;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-
     }
 
-    .e-m-img {
-        justify-items: center;
+    .desktop-img {
+        display: block;
+        width: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile-img {
+        width: 50vh;
     }
 
     .footer-grid {
@@ -620,10 +450,6 @@ li {
         margin-top: 0rem;
     }
 
-    .footer-links {
-        flex-direction: row;
-        column-gap: 2rem;
-    }
 
     .footer-links {
         flex-direction: row;
