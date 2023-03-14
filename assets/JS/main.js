@@ -11,13 +11,17 @@
     }
     showMenu ( 'nav-toggle', 'nav-menu' )
 
-    /*====== REMOVE MENU MOBILE ======*/ 
+    /*====== ACTIVE LINK & REMOVE MENU MOBILE ======*/ 
     const navLink = document.querySelectorAll('.nav-link')
     function linkAction(){
+        navLink.forEach(n => n.classList.remove('active'))
+        this.classList.add('active')
+
         const navMenu = document.getElementById('nav-menu')
         navMenu.classList.remove('show-menu')
     }
     navLink.forEach(n => n.addEventListener('click', linkAction))
+    
 
     /*====== SERVICES MODAL ======*/
     const modalViews = document.querySelectorAll('.services-modal'),
@@ -46,6 +50,7 @@
         if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
     }
     window.addEventListener('scroll', scrollUp)
+
 
     /*====== SCROLL REVEAL ANIMATION ======*/ 
     const sr = ScrollReveal({
