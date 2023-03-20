@@ -976,11 +976,11 @@ figure {
     .home img {
         width: 400px;
         margin-top: 5rem;
-        margin-left: 6rem;
+        margin-left: 1rem;
     }
     .home-scroll {
         display: block;
-        margin-left: 6.4rem;
+        margin-left: 2.5rem;
         
     }
     .home-scroll-button {
@@ -990,7 +990,7 @@ figure {
         margin-left: var(--mb-1-5);
     }
     .home-data {
-        margin-left: 6rem;
+        margin-left: 2rem;
         width: 550px;
     }
     .about-description-title {
