@@ -651,10 +651,12 @@ figure {
     color: var(--container-color);
     
 }
+
 .contact-description {
     margin-bottom: var(--mb-3);
     font-size: var(--h2-font-size);
 }
+
 .contact-button {
         background-color: var(--container-color);
         color: var(--text-color);
@@ -665,62 +667,78 @@ figure {
         font-family: 'Poppins', sans-serif;
         transition: .4s;
 }
+
 .contact-button:hover {
     background-color: var(--first-color);
     color: var(--container-color);
 }
+
 /*================ CONTACT INFO =================*/
 .contact-info-section {
     margin: 1rem 1rem;
 }
+
 .contact-info-title {
     font-weight: var(--font-semi-bold);
     font-size: var(--h3-font-size);
     color: var(--text-color);
     margin-bottom: var(--mb-0-5);
 }
+
 .contact-info-subtitle {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1-5);
 }
+
 .contact-info-icon {
     font-size: 1.5rem;
 }
+
 .contact-info-link {
     color: var(--first-color-lighter);
     margin-left: var(--mb-0-5);
 }
+
 .contact-info-links {
     margin-bottom: var(--mb-0-75);
 }
+
 .mail-icon {
     color: var(--first-color-lighter);
 }
+
 .linkedin-icon,
 .facebook-icon {
     color: #1877F2;
 }
+
 .twitter-icon {
     color: #1DA1F2;
 }
+
 .behance-icon {
     color: #1769FF;
 }
+
 .github-icon {
     color: #191717;
 }
+
 /*================ FOOTER =================*/
 .footer {
     padding-top: 2rem;
 }
+
 .footer-container {
     row-gap: 3.5rem;
     margin-left: 1rem;
 }
+
 .footer-bg {
     background-color: var(--first-color);
     padding: 2rem 0 1rem;
 }
+
 .footer-title {
     font-size: var(--h2-font-size);
     font-weight: var(--font-bold);
@@ -728,37 +746,46 @@ figure {
     margin-bottom: var(--mb-0-5);
     color: var(--container-color);
 }
+
+
 .footer-subtitle {
     font-size: var(--small-font-size);
     color: var(--container-color);
 }
+
 .footer-links {
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
     color: var(--container-color);
 }
+
 .footer-link {
     color: var(--container-color);
     font-size: var(--h4-font-size);
 }
+
 .footer-link:hover {
     color: var(--first-color-lighter);
 }
+
 .footer-social {
     font-size: 1.5rem;
     margin-right: var(--mb-1-5);
     color: var(--container-color);
 }
+
 .footer-social:hover {
     color: var(--first-color-lighter);
 }
+
 .footer-copy {
     font-size: var(--smaller-font-size);
     text-align: center;
     color: var(--container-color);
     margin-top: var(--mb-3);
 }
+
 /*================ Scroll Up =================*/
 .scrollup {
     position: fixed;
@@ -771,17 +798,21 @@ figure {
     z-index: var(--z-tooltip);
     transition: .4s;
 }
+
 .scrollup:hover {
     background-color: var(--first-color-alt);
 }
+
 .scrollup-icon {
     font-size: 1.5rem;
     color: var(--container-color);
 }
+
 /* Show Scroll*/
 .show-scroll {
     bottom: 5rem;
 }
+
 /*================ MEDIA QUERIES =================*/
 @media screen and (max-width: 350px) {
     .container {
