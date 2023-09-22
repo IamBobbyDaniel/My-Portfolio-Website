@@ -1,1 +1,37 @@
-function setUpEvents(){function e(){document.getElementById("nav-menu").classList.remove("show-menu")}((e,n)=>{const t=document.getElementById(e),s=document.getElementById(n);t&&s&&t.addEventListener("click",()=>{s.classList.toggle("show-menu")})})("nav-toggle","nav-menu"),document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",e)),window.addEventListener("scroll",function(){const e=document.getElementById("scroll-up");this.scrollY>=560?e.classList.add("show-scroll"):e.classList.remove("show-scroll")})}window.onload=function(){setUpEvents()};
+function setUpEvents () {
+        /*====== SHOW MENU======*/ 
+    const showMenu = (toggleId,navId) =>{
+        const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
+
+        if(toggle && nav){
+            toggle.addEventListener('click', ()=>  {
+                nav.classList.toggle('show-menu')
+            })
+        }
+    }
+
+    showMenu ( 'nav-toggle', 'nav-menu' )
+
+    /*====== REMOVE MENU MOBILE ======*/ 
+    const navLink = document.querySelectorAll('.nav-link')
+
+    function linkAction(){
+        const navMenu = document.getElementById('nav-menu')
+        navMenu.classList.remove('show-menu')
+    }
+    navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+    /*====== SHOW SCROLL UP ======*/ 
+    function scrollUp(){
+        const scrollUp = document.getElementById('scroll-up');
+        
+        if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
+    }
+    window.addEventListener('scroll', scrollUp)
+}
+
+window.onload = function() {
+    setUpEvents();
+};
