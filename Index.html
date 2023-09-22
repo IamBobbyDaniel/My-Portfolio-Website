@@ -1,37 +1,58 @@
-<!doctype html>
-<html lang=en>
-
-<head>
-    <meta charset=UTF-8>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Responsive Portfolio Website</title>
-    <link rel=preconnect href=https://fonts.googleapis.com>
-    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-    <link rel=preconnect
-        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap"
-        as=font crossorigin>
-    <link rel=stylesheet href=assets/CSS/Style.css>
-    <link rel=stylesheet href=https://unicons.iconscout.com/release/v4.0.0/css/line.css>
-</head>
+    <link rel="icon" type="image/x-icon" href="/assets/Images/Favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito+Sans:wght@200;300;400;700&family=Poppins:wght@500;600&display=swap"
+      as="font"
+      crossorigin
+    />
+    <!-- ===================CSS===================== -->
+    <link rel="stylesheet" href="assets/CSS/Style.css" />
+    <!-- ===================UNICONS===================== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
 
-<body>
-    <header class=one-header id=header>
-        <nav class="nav bd-container">
-            <a href=# class=nav-logo>&lt; Bobby Daniel &gt; </a>
-            <div class=nav-menu id=nav-menu>
-                <ul class=nav-list>
-                    <li class=nav-item><a href=#home class="nav-link active">Home</a></li>
-                    <li class=nav-item><a href=#about class=nav-link>About</a></li>
-                    <li class=nav-item><a href=#projects class=nav-link>Projects</a></li>
-                    <li class=nav-item><a href=#services class=nav-link>Services</a></li>
-                    <li class=nav-item><a href=#contactme class=nav-link>Contact me</a></li>
-                </ul>
-            </div>
-            <div class=nav-toggle id=nav-toggle>
-                <i class="uil uil-bars"></i>
-            </div>
-        </nav>
+  <body>
+    <!-- ===================Header===================== -->
+    <header class="one-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav-logo">&lt; Bobby Daniel &gt; </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactme" class="nav-link">Contact me</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="uil uil-bars"></i>
+        </div>
+      </nav>
     </header>
     <main class=main>
         <section class=home-section id=home>
@@ -77,11 +98,11 @@
             <h5 class=section-subtitle>&lt;Introduction&gt;</h5>
             <h2 class=section-title>About</h2>
             <div class="about-container bd-grid">
-                <img src="assets/Images/Second image.webp" width="326" height="355" class="about-img" alt="about image">
-
-                <div class="about-description">
-                    <h4 class="about-description-title">Who am I?</h4>
-                    <p class="about-text">My name is Bobby Daniel and I am a UI/UX Designer and Front-end Development. I
+                <img src="assets/Images/Second image.webp" loading=lazy width=326 height=355 class=about-img
+                    alt="about image">
+                <div class=about-description>
+                    <h4 class=about-description-title>Who am I?</h4>
+                    <p class=about-text>My name is Bobby Daniel and I am a UI/UX Designer and Front-end Development. I
                         am also a student in Biomedical Engineering. </p>
                     <h4 class=about-description-title>What I do</h4>
                     <p class=about-text>I combine research, User flows, wire-framing, prototyping, storytelling, visual
@@ -122,9 +143,8 @@
                     <span class=skills-name>Github</span>
                     <span class=skills-name>Slack</span>
                 </div>
-
-                <div class="skills-img">
-                    <img src="assets/Images/Diary image.webp" width="430" height="286" alt="Diary image">
+                <div class=skills-img>
+                    <img src="assets/Images/Diary image.webp" loading=lazy width=430 height=286 alt="Diary image">
                 </div>
             </div>
             <h5 class=section-subtitle>&lt;&#47;Introduction&gt;</h5>
@@ -135,10 +155,10 @@
             <p class=section-description>You can find some of the projects I have worked on recently here</p>
             <div class="project-container bd-grid">
                 <div class="first-project project-case">
-                    <figure class="project-image">
-                        <a href="/First project.html" target="_blank" class="project-link"> <img
-                                src="assets/Images/First project image.webp" width="883" height="470"
-                                alt="project image" class="first-project-image pro-img" layout="responsive" defer>
+                    <figure class=project-image>
+                        <a href="First project.html" target=_blank class=project-link> <img
+                                src="assets/Images/First project image.webp" loading=lazy width=883 height=470
+                                alt="project image" class="first-project-image pro-img" layout=responsive defer>
                         </a>
                     </figure>
                     <div class="project-content right">
@@ -152,10 +172,10 @@
                     </div>
                 </div>
                 <div class="second-project project-case">
-                    <figure class="project-image">
-                        <a href="/Second project.html" target="_blank" class="project-link"> <img
-                                src="assets/Images/Second project image.webp" width="883" height="470"
-                                alt="project image" class="second-project-image pro-img" layout="responsive" defer></a>
+                    <figure class=project-image>
+                        <a href="Second project.html" target=_blank class=project-link> <img
+                                src="assets/Images/Second project image.webp" loading=lazy width=883 height=470
+                                alt="project image" class="second-project-image pro-img" layout=responsive defer></a>
                     </figure>
                     <div class="project-content right">
                         <div class="project-description content">
@@ -171,9 +191,9 @@
                 <div class="third-project project-case">
                     <figure class=project-image>
                         <a href="https://www.figma.com/file/IXDfTtcvseYcoXxpd9aOsI/My-Portfolio-Website-Design-Template?node-id=0%3A1&t=RDlshtAi3MsyNjCT-1"
-                            target="_blank" class="project-link"> <img src="assets/Images/Third project image.webp"
-                                width="883" height="470" alt="project image" class="third-project-image pro-img"
-                                layout="responsive" defer></a>
+                            target=_blank class=project-link> <img src="assets/Images/Third project image.webp"
+                                width=883 loading=lazy height=470 alt="project image"
+                                class="third-project-image pro-img" layout=responsive defer></a>
                     </figure>
                     <div class="project-content right">
                         <div class="project-description content">
@@ -188,25 +208,21 @@
             </div>
             <h5 class=section-subtitle>&lt;&#47;Projects&gt;</h5>
         </section>
-        <!-- ========= Side Projects ========= -->
-        <section class="side-project-section">
-            <h5 class="section-subtitle">&lt;Side projects&gt;</h5>
-            <h2 class="section-title">Personal Projects</h2>
-
-            <div class="side-projects-images">
-                <figure class="s-p-image">
-                    <img src="assets/Images/Side projects Hero section.webp" width="393" height="251"
-                        alt="Side projects Hero section" layout="responsive" defer>
+        <section class=side-project-section>
+            <h5 class=section-subtitle>&lt;Side projects&gt;</h5>
+            <h2 class=section-title>Personal Projects</h2>
+            <div class=side-projects-images>
+                <figure class=s-p-image>
+                    <img src="assets/Images/Side projects Hero section.webp" loading=lazy width=393 height=251
+                        alt="Side projects Hero section" layout=responsive defer>
                 </figure>
-
-                <figure class="s-p-image">
-                    <img src="assets/Images/Side projects VR.webp" width="398" height="257" alt="Side projects VR"
-                        layout="responsive" defer>
+                <figure class=s-p-image>
+                    <img src="assets/Images/Side projects VR.webp" loading=lazy width=398 height=257
+                        alt="Side projects VR" layout=responsive defer>
                 </figure>
-
-                <figure class="s-p-image">
-                    <img src="assets/Images/Side projects game dashboard.webp" width="385" height="260"
-                        alt="Side projects game dashboard" layout="responsive" defer>
+                <figure class=s-p-image>
+                    <img src="assets/Images/Side projects game dashboard.webp" loading=lazy width=385 height=260
+                        alt="Side projects game dashboard" layout=responsive defer>
                 </figure>
             </div>
             <a href="Side projects.html" class="side-project-button project-button button-flex" target=_blank>View
@@ -320,46 +336,74 @@
             </div>
         </section>
     </main>
-    <footer class=footer>
-        <div class=footer-bg>
-            <div class="footer-container container grid">
-                <div class=footer-title-subtitle>
-                    <a href=#>
-                        <h3 class=footer-title>Bobby Daniel</h3>
-                    </a>
-                    <h3 class=footer-subtitle>UI/UX Designer / Frontend Developer</h3>
-                </div>
-                <div>
-                    <ul class=footer-links>
-                        <li>
-                            <a href=#about class=footer-link>About</a>
-                        </li>
-                        <li>
-                            <a href=#projects class=footer-link>Projects</a>
-                        </li>
-                        <li>
-                            <a href=#services class=footer-link>Services</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class=footer-socials>
-                    <a href=https://www.linkedin.com/in/iambobbydaniel target=_blank class=footer-social>
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href=https://twitter.com/iambobbydaniel target="_blank " class=footer-social>
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                    <a href=https://www.behance.net/iambobbydaniel target=_blank class=footer-social>
-                        <i class="uil uil-behance"></i>
-                    </a>
-                </div>
-            </div>
-            <p class=footer-copy>Designed and Built with love by Bobby Daniel</p>
-        </div>
-    </footer>
-    <a href=# class=scrollup id=scroll-up><i class="uil uil-arrow-up scrollup-icon"></i></a>
-    <script src=assets/JS/main.js defer></script>
-    <script src=https://unpkg.com/scrollreveal defer></script>
-</body>
+    <!-- =================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="footer-bg">
+        <div class="footer-container container grid">
+          <div class="footer-title-subtitle">
+            <a href="#">
+              <h3 class="footer-title">Bobby Daniel</h3>
+            </a>
+            <h3 class="footer-subtitle">UI/UX Designer / Frontend Developer</h3>
+          </div>
 
+          <div>
+            <ul class="footer-links">
+              <li>
+                <a href="#about" class="footer-link">About</a>
+              </li>
+
+              <li>
+                <a href="#projects" class="footer-link">Projects</a>
+              </li>
+
+              <li>
+                <a href="#services" class="footer-link">Services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/iambobbydaniel"
+              target="_blank"
+              class="footer-social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/iambobbydaniel"
+              target="_blank "
+              class="footer-social"
+            >
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+
+            <a
+              href="https://www.behance.net/iambobbydaniel"
+              target="_blank"
+              class="footer-social"
+            >
+              <i class="uil uil-behance"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer-copy">Designed and Built with love by Bobby Daniel</p>
+      </div>
+    </footer>
+    <!-- =================== SCROLL TOP===================== -->
+    <a href="#" class="scrollup" id="scroll-up"
+      ><i class="uil uil-arrow-up scrollup-icon"></i
+    ></a>
+    <!-- ===================Main javascript===================== -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="assets/JS/main.js"
+      defer
+    ></script>
+    <!-- =================== SCROLL REVEAL===================== -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+  </body>
 </html>
